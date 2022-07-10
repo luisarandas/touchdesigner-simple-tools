@@ -1,0 +1,1 @@
+computing particles in the middle of a texture chain, ill try with 2 render TOPs
