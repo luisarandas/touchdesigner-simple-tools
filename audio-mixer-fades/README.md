@@ -1,0 +1,1 @@
+control audio fade in/out through trigger, able to range (not sure about db conversion)
