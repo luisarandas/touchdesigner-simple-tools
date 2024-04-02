@@ -1,1 +1,0 @@
-external communication between touchdesigner internal webserver and arbitrary external python code

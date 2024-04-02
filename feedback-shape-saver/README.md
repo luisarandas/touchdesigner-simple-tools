@@ -1,1 +1,0 @@
-trying to automate simple shapes moving in arbitrary constant color texture

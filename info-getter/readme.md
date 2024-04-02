@@ -1,1 +1,0 @@
-this creates callbacks based on a video info channel

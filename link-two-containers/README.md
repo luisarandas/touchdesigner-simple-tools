@@ -1,1 +1,0 @@
-TODO_this is an example of the Select CHOP, same logic as "send" and "receive" in MaxMSP

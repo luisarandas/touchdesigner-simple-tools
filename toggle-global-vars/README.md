@@ -1,1 +1,0 @@
-logic using panel states (or widget vals) to change global variables
