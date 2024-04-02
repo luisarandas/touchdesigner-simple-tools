@@ -1,6 +1,6 @@
 ## touchdesigner simple algorithms and tools
 
-A set of simple TouchDesigner projects with solutions for audiovisual deployment, tested on Windows 11 and RTX 3090/3070.
+A set of simple TouchDesigner projects with solutions for audiovisual work, tested on Windows 11 and RTX 3090/3070.
 
 
 1)  **audio-mixer-fades**
