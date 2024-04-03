@@ -1,6 +1,6 @@
 
 # luis arandas 02-04-2024
-# get current installed libraries on the env this is being called from
+# Execute 'test_udp.py' from a Text DAT and get the result on UDP In DAT (hiding CMD window)
 
 import subprocess
 import os

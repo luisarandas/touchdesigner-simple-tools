@@ -23,9 +23,7 @@ A set of simple TouchDesigner projects with solutions for audiovisual work, test
     Simple server to illustrate TCP io between TouchDesigner session DAT and CMD (start tcp_server.py first).
 10) **timer-subtitles-3d**
     Reads randomly generated sentences from a Table DAT, works on timer and displays with geometry to texture.
-11) **toggle-global-vars**
-    logic using panel states (or widget vals) to change global variables
-12) **web-server-internal**
+11) **web-server-internal**
     Internal Web Server DAT with external communication such as `tcp-io` folder.
 
 ```
