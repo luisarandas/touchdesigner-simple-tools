@@ -1,27 +1,66 @@
-# me - this DAT.
-# webServerDAT - the connected Web Server DAT
-# request - A dictionary of the request fields. The dictionary will always contain the below entries, plus any additional entries dependent on the contents of the request
-# 		'method' - The HTTP method of the request (ie. 'GET', 'PUT').
-# 		'uri' - The client's requested URI path. If there are parameters in the URI then they will be located under the 'pars' key in the request dictionary.
-#		'pars' - The query parameters.
-# 		'clientAddress' - The client's address.
-# 		'serverAddress' - The server's address.
-# 		'data' - The data of the HTTP request.
-# response - A dictionary defining the response, to be filled in during the request method. Additional fields not specified below can be added (eg. response['content-type'] = 'application/json').
-# 		'statusCode' - A valid HTTP status code integer (ie. 200, 401, 404). Default is 404.
-# 		'statusReason' - The reason for the above status code being returned (ie. 'Not Found.').
-# 		'data' - The data to send back to the client. If displaying a web-page, any HTML would be put here.
+# luisarandas 20-04-2024
+import json
+import logging
 
-# return the response dictionary
+def log_error(error):    
+    logger = logging.getLogger('webServerErrors')
+    logger.error(str(error))
 
 def onHTTPRequest(webServerDAT, request, response):
+    try:
+        if 'data' not in request or not request['data']:
+            raise ValueError("No data provided in the request")
+        data = json.loads(request['data'])
+        print("Received request data:", data)
+        if 'test_key' not in data:
+            raise KeyError("Missing 'test_key' in data")
+        if not isinstance(data['test_key'], str):
+            raise TypeError("Expected a string for 'test_key'")
+        if 'test_key' in data:
+            param_value = data['test_key']
+            if isinstance(param_value, str):
+                response_data = "<b>Received:</b> " + param_value
+            else:
+                response_data = "<b>Error:</b> Incorrect type for 'test_key'. Expected a string."
+                response['statusCode'] = 422  # Unprocessable Entity
+                response['statusReason'] = 'Unprocessable Entity'
+                response['data'] = response_data
+                return response
+        else:
+            response_data = "<b>Error:</b> Missing or incorrect 'test_key' in request."
+            response['statusCode'] = 400  # Bad Request
+            response['statusReason'] = 'Bad Request'
+            response['data'] = response_data
+            return response
+        # Success
+        response['statusCode'] = 200  # OK
+        response['statusReason'] = 'OK'
+        response['data'] = response_data
 
-    print(request['data'])
-
-    response['statusCode'] = 200 # OK
-    response['statusReason'] = 'OK'
-    response['data'] = '<b>TouchDesigner: </b>' + webServerDAT.name
+    except json.JSONDecodeError:
+        # Handle JSON parsing errors
+        response['statusCode'] = 400
+        response['statusReason'] = 'Bad Request'
+        response['data'] = "<b>Error:</b> Invalid JSON format."
+    except KeyError as ke:
+        # Handle missing keys
+        response['statusCode'] = 400
+        response['statusReason'] = 'Bad Request'
+        response['data'] = f"<b>Error:</b> Key error - {str(ke)}"
+    except TypeError as te:
+        # Handle type errors
+        response['statusCode'] = 400
+        response['statusReason'] = 'Bad Request'
+        response['data'] = f"<b>Error:</b> Type error - {str(te)}"
+    except Exception as e:
+        # Generic error handling
+        response['statusCode'] = 500
+        response['statusReason'] = 'Internal Server Error'
+        response['data'] = f'<b>Server Error:</b> Unexpected error - {str(e)}'
+        log_error(e)
     return response
+
+
 
 def onWebSocketOpen(webServerDAT, client, uri):
 	return
@@ -49,4 +88,5 @@ def onServerStart(webServerDAT):
 
 def onServerStop(webServerDAT):
 	return
-	
+
+
