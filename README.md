@@ -7,10 +7,14 @@ A set of simple TouchDesigner projects with solutions for audiovisual work, test
     Trigger independent audio track fade in/out on button click, able to range, and master on/off (from 0-1).
 2)  **audio-play-callback**
     Custom callback on sample length of an Audio Play CHOP to allow logic when audio files stop playing (trigger a panel when audio finishes).
-3) **extensions**
+3) **dir-watcher**
+    Populate a Table DAT with arbitrary directory (files with sizes and last-modified, also hidden).
+4) **extensions**
     Template for abstractions (e.g.) -> op('xyz').myFunction() wrapped within a Container object with GUI visibility.
-4) **feedback-shape-saver**
+5) **feedback-shape-saver**
     Simple primitive shape color feedback with Movie File Out TOP export (composite on transparent background).
+6) **get-running-apps**
+    Populate Table DAT with running processes, PID, session name and memory usage (like task manager, hides CMD).
 5) **info-getter**
     A Text DAT execution on video file finish, creates a callback from video info channel.
 6) **link-two-containers**
