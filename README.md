@@ -21,13 +21,15 @@ A set of simple TouchDesigner projects with solutions for audiovisual work, test
     A simple Select CHOP operator showing widget on container A triggered on container B (same logic as "send" and "receive" in MaxMSP).
 7) **midi-to-vst**
     Simple boolean logic to send onNoteOn() and onNoteOff() to arbitrary VST3s.
-8) **subprocess**
+8) **open-apps**
+    Launch .exe applications found in provided paths, e.g. "C:\\Program Files (x86)", threaded search from string input.
+9) **subprocess**
     Execute a request from a file on the same folder deriving paths (hides CMD using opened TD session).
-9) **tcp-io**
+10) **tcp-io**
     Simple server to illustrate TCP io between TouchDesigner session DAT and CMD (start tcp_server.py first).
-10) **timer-subtitles-3d**
+11) **timer-subtitles-3d**
     Reads randomly generated sentences from a Table DAT, works on timer and displays with geometry to texture.
-11) **web-server-internal**
+12) **web-server-internal**
     Internal Web Server DAT with external communication such as `tcp-io` folder.
 
 ```
