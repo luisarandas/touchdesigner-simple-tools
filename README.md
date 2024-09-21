@@ -5,31 +5,50 @@ A set of simple TouchDesigner projects with solutions for audiovisual work, test
 
 1)  **audio-mixer-fades**
     Trigger independent audio track fade in/out on button click, able to range, and master on/off (from 0-1).
+
 2)  **audio-play-callback**
     Custom callback on sample length of an Audio Play CHOP to allow logic when audio files stop playing (trigger a panel when audio finishes).
+
 3) **dir-watcher**
     Populate a Table DAT with arbitrary directory (files with sizes and last-modified, also hidden).
+
 4) **extensions**
     Template for abstractions (e.g.) -> op('xyz').myFunction() wrapped within a Container object with GUI visibility.
+
 5) **feedback-shape-saver**
     Simple primitive shape color feedback with Movie File Out TOP export (composite on transparent background).
+
 6) **get-running-apps**
     Populate Table DAT with running processes, PID, session name and memory usage (like task manager, hides CMD).
-5) **info-getter**
+
+7) **glsl1-barrel** 
+    BarrelDistortion.frag shader on input video file, affects 4 corners.
+
+8) **glsl2-pingpong** 
+    Ping-Pong Delay shader, feedback 0-1 (using .vs file).
+
+9) **info-getter**
     A Text DAT execution on video file finish, creates a callback from video info channel.
-6) **link-two-containers**
+
+10) **link-two-containers**
     A simple Select CHOP operator showing widget on container A triggered on container B (same logic as "send" and "receive" in MaxMSP).
-7) **midi-to-vst**
+
+11) **midi-to-vst**
     Simple boolean logic to send onNoteOn() and onNoteOff() to arbitrary VST3s.
-8) **open-apps**
+
+12) **open-apps**
     Launch .exe applications found in provided paths, e.g. "C:\\Program Files (x86)", threaded search from string input.
-9) **subprocess**
+
+13) **subprocess**
     Execute a request from a file on the same folder deriving paths (hides CMD using opened TD session).
-10) **tcp-io**
+
+114) **tcp-io**
     Simple server to illustrate TCP io between TouchDesigner session DAT and CMD (start tcp_server.py first).
-11) **timer-subtitles-3d**
+
+115) **timer-subtitles-3d**
     Reads randomly generated sentences from a Table DAT, works on timer and displays with geometry to texture.
-12) **web-server-internal**
+
+16) **web-server-internal**
     Internal Web Server DAT with external communication such as `tcp-io` folder.
 
 ```
