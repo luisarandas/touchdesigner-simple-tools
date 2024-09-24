@@ -42,16 +42,19 @@ A set of simple TouchDesigner projects with solutions for audiovisual work, test
 13) **open-apps**
     Launch .exe applications found in provided paths, e.g. "C:\\Program Files (x86)", threaded search from string input.
 
-14) **subprocess**
+14) **resolume-xml-parser**
+    Parse a Resolume XML file with mapping values into a Table DAT (composition example with 2 layers).
+
+15) **subprocess**
     Execute a request from a file on the same folder deriving paths (hides CMD using opened TD session).
 
-15) **tcp-io**
+16) **tcp-io**
     Simple server to illustrate TCP io between TouchDesigner session DAT and CMD (start tcp_server.py first).
 
-16) **timer-subtitles-3d**
+17) **timer-subtitles-3d**
     Reads randomly generated sentences from a Table DAT, works on timer and displays with geometry to texture.
 
-17) **web-server-internal**
+18) **web-server-internal**
     Internal Web Server DAT with external communication such as `tcp-io` folder.
 
 

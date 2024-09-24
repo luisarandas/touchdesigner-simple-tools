@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XmlState name="experiencia TD">
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="13" microVersion="2" revision="17774"/>
+	<ScreenSetup name="ScreenSetup">
+		<Params name="ScreenSetupParams"/>
+		<CurrentCompositionTextureSize width="1920" height="1080"/>
+		<screens>
+			<Screen name="LEFT" uniqueId="1685712125426">
+				<Params name="Params">
+					<Param name="Name" T="STRING" default="" value="LEFT"/>
+					<Param name="Enabled" T="BOOL" default="1" value="1"/>
+					<Param name="Hidden" T="BOOL" default="0" value="0"/>
+				</Params>
+				<Params name="Output">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+						<BehaviourDouble name="BehaviourDouble"/>
+						<ValueRange name="defaultRange" min="0" max="1"/>
+						<ValueRange name="minMax" min="0" max="1"/>
+						<ValueRange name="startStop" min="0" max="1"/>
+					</ParamRange>
+					<ParamRange name="Brightness" T="DOUBLE" default="0" value="0">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+						<BehaviourDouble name="BehaviourDouble"/>
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+						<ValueRange name="minMax" min="-1" max="1"/>
+						<ValueRange name="startStop" min="-1" max="1"/>
+					</ParamRange>
+					<ParamRange name="Contrast" T="DOUBLE" default="0" value="0">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+						<BehaviourDouble name="BehaviourDouble"/>
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+						<ValueRange name="minMax" min="-1" max="1"/>
+						<ValueRange name="startStop" min="-1" max="1"/>
+					</ParamRange>
+					<ParamRange name="Red" T="DOUBLE" default="0" value="0">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+						<BehaviourDouble name="BehaviourDouble"/>
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+						<ValueRange name="minMax" min="-1" max="1"/>
+						<ValueRange name="startStop" min="-1" max="1"/>
+					</ParamRange>
+					<ParamRange name="Green" T="DOUBLE" default="0" value="0">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+						<BehaviourDouble name="BehaviourDouble"/>
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+						<ValueRange name="minMax" min="-1" max="1"/>
+						<ValueRange name="startStop" min="-1" max="1"/>
+					</ParamRange>
+					<ParamRange name="Blue" T="DOUBLE" default="0" value="0">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+						<BehaviourDouble name="BehaviourDouble"/>
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+						<ValueRange name="minMax" min="-1" max="1"/>
+						<ValueRange name="startStop" min="-1" max="1"/>
+					</ParamRange>
+				</Params>
+				<guides>
+					<ScreenGuide name="ScreenGuide" type="0">
+						<Params name="Params">
+							<ParamRange name="Opacity" T="DOUBLE" default="0.25" value="0.25">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.25"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="1"/>
+								<ValueRange name="minMax" min="0" max="1"/>
+								<ValueRange name="startStop" min="0" max="1"/>
+							</ParamRange>
+							<ParamPixels name="Image"/>
+						</Params>
+					</ScreenGuide>
+					<ScreenGuide name="ScreenGuide" type="1">
+						<Params name="Params">
+							<ParamRange name="Opacity" T="DOUBLE" default="0.25" value="0.25">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.25"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="1"/>
+								<ValueRange name="minMax" min="0" max="1"/>
+								<ValueRange name="startStop" min="0" max="1"/>
+							</ParamRange>
+							<ParamPixels name="Image"/>
+						</Params>
+					</ScreenGuide>
+				</guides>
+				<layers>
+					<Slice uniqueId="1685712125440">
+						<Params name="Common">
+							<Param name="Name" T="STRING" default="Layer" value="Slice 1"/>
+							<Param name="Enabled" T="BOOL" default="1" value="1"/>
+						</Params>
+						<Params name="Input">
+							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<Param name="Input Opacity" T="BOOL" default="1" value="1"/>
+							<Param name="Input Bypass/Solo" T="BOOL" default="1" value="1"/>
+							<Param name="SoftEdgeEnable" T="BOOL" default="0" value="0"/>
+						</Params>
+						<Params name="Output">
+							<Param name="Flip" T="UINT8" default="0" value="0"/>
+							<ParamRange name="Brightness" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Contrast" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Red" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Green" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Blue" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<Param name="Is Key" T="BOOL" default="0" value="0"/>
+							<Param name="Black BG" T="BOOL" default="0" value="0"/>
+							<ParamRange name="BRed" altName="Red" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="minMax" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="startStop" min="0" max="0.4000000000000000222"/>
+							</ParamRange>
+							<ParamRange name="BGreen" altName="Green" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="minMax" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="startStop" min="0" max="0.4000000000000000222"/>
+							</ParamRange>
+							<ParamRange name="BBlue" altName="Blue" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="minMax" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="startStop" min="0" max="0.4000000000000000222"/>
+							</ParamRange>
+						</Params>
+						<InputRect orientation="0">
+							<v x="0" y="0"/>
+							<v x="960" y="0"/>
+							<v x="960" y="1080"/>
+							<v x="0" y="1080"/>
+						</InputRect>
+						<OutputRect orientation="0">
+							<v x="29" y="0"/>
+							<v x="1920" y="0"/>
+							<v x="1920" y="1080"/>
+							<v x="29" y="1080"/>
+						</OutputRect>
+						<Warper>
+							<Params name="Warper">
+								<ParamChoice name="Point Mode" default="PM_LINEAR" value="PM_LINEAR" storeChoices="0"/>
+								<Param name="Flip" T="UINT8" default="0" value="0"/>
+							</Params>
+							<BezierWarper controlWidth="7" controlHeight="7">
+								<vertices>
+									<v x="29" y="27"/>
+									<v x="315.542816162109375" y="52.19113922119140625"/>
+									<v x="602.0855712890625" y="77.38227081298828125"/>
+									<v x="888.62841796875" y="102.5734100341796875"/>
+									<v x="1232.4189453125" y="68.38227081298828125"/>
+									<v x="1576.20947265625" y="34.19113922119140625"/>
+									<v x="1920" y="0"/>
+									<v x="70.03823089599609375" y="143.7844085693359375"/>
+									<v x="355.001251220703125" y="173.3397369384765625"/>
+									<v x="639.96435546875" y="202.8949737548828125"/>
+									<v x="924.9273681640625" y="232.4503021240234375"/>
+									<v x="1246.832275390625" y="225.48675537109375"/>
+									<v x="1568.7373046875" y="218.5231781005859375"/>
+									<v x="1890.6422119140625" y="211.559661865234375"/>
+									<v x="111.07645416259765625" y="260.56878662109375"/>
+									<v x="394.459716796875" y="294.48828125"/>
+									<v x="677.84295654296875" y="328.407684326171875"/>
+									<v x="961.226318359375" y="362.327178955078125"/>
+									<v x="1261.24560546875" y="382.5911865234375"/>
+									<v x="1561.2650146484375" y="402.855224609375"/>
+									<v x="1861.2843017578125" y="423.119293212890625"/>
+									<v x="152.11468505859375" y="377.35321044921875"/>
+									<v x="433.918212890625" y="415.6368408203125"/>
+									<v x="715.72174072265625" y="453.920440673828125"/>
+									<v x="997.5252685546875" y="492.204071044921875"/>
+									<v x="1275.6590576171875" y="539.6956787109375"/>
+									<v x="1553.792724609375" y="587.18731689453125"/>
+									<v x="1831.926513671875" y="634.678955078125"/>
+									<v x="125.629974365234375" y="567.5321044921875"/>
+									<v x="416.12896728515625" y="600.39398193359375"/>
+									<v x="706.6279296875" y="633.25579833984375"/>
+									<v x="997.126953125" y="666.11767578125"/>
+									<v x="1285.179443359375" y="705.11822509765625"/>
+									<v x="1573.23193359375" y="744.1187744140625"/>
+									<v x="1861.2843017578125" y="783.11932373046875"/>
+									<v x="99.14527130126953125" y="757.71099853515625"/>
+									<v x="398.3397216796875" y="785.151123046875"/>
+									<v x="697.5341796875" y="812.5911865234375"/>
+									<v x="996.7286376953125" y="840.03131103515625"/>
+									<v x="1294.6998291015625" y="870.540771484375"/>
+									<v x="1592.6710205078125" y="901.05010986328125"/>
+									<v x="1890.6422119140625" y="931.55963134765625"/>
+									<v x="72.66056060791015625" y="947.889892578125"/>
+									<v x="380.55047607421875" y="969.90826416015625"/>
+									<v x="688.4404296875" y="991.92657470703125"/>
+									<v x="996.330322265625" y="1013.9449462890625"/>
+									<v x="1304.22021484375" y="1035.9632568359375"/>
+									<v x="1612.110107421875" y="1057.981689453125"/>
+									<v x="1920" y="1080"/>
+								</vertices>
+							</BezierWarper>
+							<Homography>
+								<src>
+									<v x="29" y="0"/>
+									<v x="1920" y="0"/>
+									<v x="1920" y="1080"/>
+									<v x="29" y="1080"/>
+								</src>
+								<dst>
+									<v x="29" y="0"/>
+									<v x="1920" y="0"/>
+									<v x="1920" y="1080"/>
+									<v x="29" y="1080"/>
+								</dst>
+							</Homography>
+						</Warper>
+					</Slice>
+				</layers>
+				<OutputDevice>
+					<OutputDeviceVirtual name="LEFT" deviceId="VirtualLEFT" idHash="5080588408695647506" width="1920" height="1080">
+						<Params name="Params">
+							<ParamRange name="Width" T="DOUBLE" default="800" value="1920">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.11713361411218946306"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="1" max="16384"/>
+								<ValueRange name="minMax" min="1" max="16384"/>
+								<ValueRange name="startStop" min="1" max="16384"/>
+							</ParamRange>
+							<ParamRange name="Height" T="DOUBLE" default="600" value="1080">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.065860953427333210342"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="1" max="16384"/>
+								<ValueRange name="minMax" min="1" max="16384"/>
+								<ValueRange name="startStop" min="1" max="16384"/>
+							</ParamRange>
+						</Params>
+					</OutputDeviceVirtual>
+				</OutputDevice>
+			</Screen>
+			<Screen name="RIGHT" uniqueId="1726176738705">
+				<Params name="Params">
+					<Param name="Name" T="STRING" default="" value="RIGHT"/>
+					<Param name="Enabled" T="BOOL" default="1" value="1"/>
+					<Param name="Hidden" T="BOOL" default="0" value="0"/>
+				</Params>
+				<Params name="Output">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+						<BehaviourDouble name="BehaviourDouble"/>
+						<ValueRange name="defaultRange" min="0" max="1"/>
+						<ValueRange name="minMax" min="0" max="1"/>
+						<ValueRange name="startStop" min="0" max="1"/>
+					</ParamRange>
+					<ParamRange name="Brightness" T="DOUBLE" default="0" value="0">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+						<BehaviourDouble name="BehaviourDouble"/>
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+						<ValueRange name="minMax" min="-1" max="1"/>
+						<ValueRange name="startStop" min="-1" max="1"/>
+					</ParamRange>
+					<ParamRange name="Contrast" T="DOUBLE" default="0" value="0">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+						<BehaviourDouble name="BehaviourDouble"/>
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+						<ValueRange name="minMax" min="-1" max="1"/>
+						<ValueRange name="startStop" min="-1" max="1"/>
+					</ParamRange>
+					<ParamRange name="Red" T="DOUBLE" default="0" value="0">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+						<BehaviourDouble name="BehaviourDouble"/>
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+						<ValueRange name="minMax" min="-1" max="1"/>
+						<ValueRange name="startStop" min="-1" max="1"/>
+					</ParamRange>
+					<ParamRange name="Green" T="DOUBLE" default="0" value="0">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+						<BehaviourDouble name="BehaviourDouble"/>
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+						<ValueRange name="minMax" min="-1" max="1"/>
+						<ValueRange name="startStop" min="-1" max="1"/>
+					</ParamRange>
+					<ParamRange name="Blue" T="DOUBLE" default="0" value="0">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+						<BehaviourDouble name="BehaviourDouble"/>
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+						<ValueRange name="minMax" min="-1" max="1"/>
+						<ValueRange name="startStop" min="-1" max="1"/>
+					</ParamRange>
+				</Params>
+				<guides>
+					<ScreenGuide name="ScreenGuide" type="0">
+						<Params name="Params">
+							<ParamRange name="Opacity" T="DOUBLE" default="0.25" value="0.25">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.25"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="1"/>
+								<ValueRange name="minMax" min="0" max="1"/>
+								<ValueRange name="startStop" min="0" max="1"/>
+							</ParamRange>
+							<ParamPixels name="Image"/>
+						</Params>
+					</ScreenGuide>
+					<ScreenGuide name="ScreenGuide" type="1">
+						<Params name="Params">
+							<ParamRange name="Opacity" T="DOUBLE" default="0.25" value="0.25">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.25"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="1"/>
+								<ValueRange name="minMax" min="0" max="1"/>
+								<ValueRange name="startStop" min="0" max="1"/>
+							</ParamRange>
+							<ParamPixels name="Image"/>
+						</Params>
+					</ScreenGuide>
+				</guides>
+				<layers>
+					<Slice uniqueId="1726176738719">
+						<Params name="Common">
+							<Param name="Name" T="STRING" default="Layer" value="Slice 1"/>
+							<Param name="Enabled" T="BOOL" default="1" value="1"/>
+						</Params>
+						<Params name="Input">
+							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<Param name="Input Opacity" T="BOOL" default="1" value="1"/>
+							<Param name="Input Bypass/Solo" T="BOOL" default="1" value="1"/>
+							<Param name="SoftEdgeEnable" T="BOOL" default="0" value="0"/>
+						</Params>
+						<Params name="Output">
+							<Param name="Flip" T="UINT8" default="0" value="0"/>
+							<ParamRange name="Brightness" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Contrast" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Red" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Green" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Blue" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<Param name="Is Key" T="BOOL" default="0" value="0"/>
+							<Param name="Black BG" T="BOOL" default="0" value="0"/>
+							<ParamRange name="BRed" altName="Red" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="minMax" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="startStop" min="0" max="0.4000000000000000222"/>
+							</ParamRange>
+							<ParamRange name="BGreen" altName="Green" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="minMax" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="startStop" min="0" max="0.4000000000000000222"/>
+							</ParamRange>
+							<ParamRange name="BBlue" altName="Blue" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="minMax" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="startStop" min="0" max="0.4000000000000000222"/>
+							</ParamRange>
+						</Params>
+						<InputRect orientation="0">
+							<v x="960" y="0"/>
+							<v x="1920" y="0"/>
+							<v x="1920" y="1080"/>
+							<v x="960" y="1080"/>
+						</InputRect>
+						<OutputRect orientation="0">
+							<v x="11.86651611328125" y="0"/>
+							<v x="1920.000244140625" y="0"/>
+							<v x="1920.000244140625" y="1080.0001220703125"/>
+							<v x="11.86651611328125" y="1080.0001220703125"/>
+						</OutputRect>
+						<Warper>
+							<Params name="Warper">
+								<ParamChoice name="Point Mode" default="PM_LINEAR" value="PM_LINEAR" storeChoices="0"/>
+								<Param name="Flip" T="UINT8" default="0" value="0"/>
+							</Params>
+							<BezierWarper controlWidth="25" controlHeight="13">
+								<vertices>
+									<v x="127.70642852783203125" y="99.0825653076171875"/>
+									<v x="202.385345458984375" y="94.95412445068359375"/>
+									<v x="277.064239501953125" y="90.82568359375"/>
+									<v x="351.7431640625" y="86.69724273681640625"/>
+									<v x="426.422088623046875" y="82.5688018798828125"/>
+									<v x="501.100982666015625" y="78.44036102294921875"/>
+									<v x="575.7799072265625" y="74.311920166015625"/>
+									<v x="650.45880126953125" y="70.18347930908203125"/>
+									<v x="725.1376953125" y="66.0550384521484375"/>
+									<v x="799.81658935546875" y="61.926601409912109375"/>
+									<v x="874.4954833984375" y="57.798160552978515625"/>
+									<v x="949.17437744140625" y="53.6697235107421875"/>
+									<v x="1023.853271484375" y="49.54128265380859375"/>
+									<v x="1098.5321044921875" y="45.412841796875"/>
+									<v x="1173.2110595703125" y="41.28440093994140625"/>
+									<v x="1247.889892578125" y="37.1559600830078125"/>
+									<v x="1322.56884765625" y="33.02751922607421875"/>
+									<v x="1397.2476806640625" y="28.899082183837890625"/>
+									<v x="1471.9266357421875" y="24.770641326904296875"/>
+									<v x="1546.6055908203125" y="20.642200469970703125"/>
+									<v x="1621.284423828125" y="16.513761520385742188"/>
+									<v x="1695.96337890625" y="12.385320663452148438"/>
+									<v x="1770.6422119140625" y="8.2568798065185546875"/>
+									<v x="1845.3211669921875" y="4.1284403800964355469"/>
+									<v x="1920" y="0"/>
+									<v x="124.40367889404296875" y="171.100921630859375"/>
+									<v x="199.2201995849609375" y="167.7216949462890625"/>
+									<v x="274.036712646484375" y="164.3425140380859375"/>
+									<v x="348.853240966796875" y="160.96331787109375"/>
+									<v x="415.380889892578125" y="168.5436553955078125"/>
+									<v x="481.90850830078125" y="176.1240386962890625"/>
+									<v x="548.4361572265625" y="183.704437255859375"/>
+									<v x="631.54156494140625" y="169.3656768798828125"/>
+									<v x="714.64697265625" y="155.02685546875"/>
+									<v x="797.75238037109375" y="140.6880645751953125"/>
+									<v x="883.26239013671875" y="146.282958984375"/>
+									<v x="968.7724609375" y="151.8778533935546875"/>
+									<v x="1054.282470703125" y="157.472747802734375"/>
+									<v x="1118.4053955078125" y="145.11944580078125"/>
+									<v x="1182.5284423828125" y="132.766143798828125"/>
+									<v x="1246.6513671875" y="120.412841796875"/>
+									<v x="1321.4678955078125" y="117.03363800048828125"/>
+									<v x="1396.284423828125" y="113.65445709228515625"/>
+									<v x="1471.1009521484375" y="110.275238037109375"/>
+									<v x="1529.9068603515625" y="106.4153594970703125"/>
+									<v x="1588.712890625" y="102.55547332763671875"/>
+									<v x="1647.518798828125" y="98.69559478759765625"/>
+									<v x="1738.3458251953125" y="95.79706573486328125"/>
+									<v x="1829.1729736328125" y="92.898529052734375"/>
+									<v x="1920" y="90"/>
+									<v x="121.100921630859375" y="243.1192626953125"/>
+									<v x="196.0550689697265625" y="240.4892730712890625"/>
+									<v x="271.00921630859375" y="237.8593597412109375"/>
+									<v x="345.963348388671875" y="235.2293548583984375"/>
+									<v x="404.339691162109375" y="254.5185394287109375"/>
+									<v x="462.716064453125" y="273.807708740234375"/>
+									<v x="521.0924072265625" y="293.096954345703125"/>
+									<v x="612.62432861328125" y="268.547821044921875"/>
+									<v x="704.15625" y="243.9986724853515625"/>
+									<v x="795.6881103515625" y="219.44952392578125"/>
+									<v x="892.02935791015625" y="234.7677459716796875"/>
+									<v x="988.37060546875" y="250.08599853515625"/>
+									<v x="1084.7117919921875" y="265.40423583984375"/>
+									<v x="1138.27880859375" y="244.8260345458984375"/>
+									<v x="1191.8458251953125" y="224.247894287109375"/>
+									<v x="1245.412841796875" y="203.6697235107421875"/>
+									<v x="1320.366943359375" y="201.039764404296875"/>
+									<v x="1395.321044921875" y="198.4097747802734375"/>
+									<v x="1470.275146484375" y="195.779815673828125"/>
+									<v x="1513.208251953125" y="192.1884918212890625"/>
+									<v x="1556.1412353515625" y="188.5971832275390625"/>
+									<v x="1599.0743408203125" y="185.005859375"/>
+									<v x="1706.049560546875" y="183.3372650146484375"/>
+									<v x="1813.0247802734375" y="181.6686248779296875"/>
+									<v x="1920" y="180"/>
+									<v x="117.7981719970703125" y="315.137603759765625"/>
+									<v x="192.889923095703125" y="313.256866455078125"/>
+									<v x="267.981689453125" y="311.37615966796875"/>
+									<v x="343.07342529296875" y="309.49542236328125"/>
+									<v x="393.298492431640625" y="340.493438720703125"/>
+									<v x="443.523590087890625" y="371.491455078125"/>
+									<v x="493.7486572265625" y="402.489471435546875"/>
+									<v x="593.70709228515625" y="367.72998046875"/>
+									<v x="693.66546630859375" y="332.970489501953125"/>
+									<v x="793.6239013671875" y="298.21099853515625"/>
+									<v x="900.7962646484375" y="323.2525634765625"/>
+									<v x="1007.9686279296875" y="348.29412841796875"/>
+									<v x="1115.1409912109375" y="373.335693359375"/>
+									<v x="1158.152099609375" y="344.53265380859375"/>
+									<v x="1201.1632080078125" y="315.729644775390625"/>
+									<v x="1244.17431640625" y="286.926605224609375"/>
+									<v x="1319.2659912109375" y="285.045867919921875"/>
+									<v x="1394.3577880859375" y="283.1651611328125"/>
+									<v x="1469.449462890625" y="281.284423828125"/>
+									<v x="1496.509521484375" y="277.961669921875"/>
+									<v x="1523.5697021484375" y="274.638885498046875"/>
+									<v x="1550.6297607421875" y="271.316131591796875"/>
+									<v x="1673.753173828125" y="270.877410888671875"/>
+									<v x="1796.8765869140625" y="270.438720703125"/>
+									<v x="1920" y="270"/>
+									<v x="114.49541473388671875" y="387.15594482421875"/>
+									<v x="189.7247772216796875" y="386.024505615234375"/>
+									<v x="264.954193115234375" y="384.892974853515625"/>
+									<v x="340.183502197265625" y="383.761474609375"/>
+									<v x="398.8350830078125" y="404.54913330078125"/>
+									<v x="457.486724853515625" y="425.336822509765625"/>
+									<v x="516.13824462890625" y="446.124481201171875"/>
+									<v x="613.501708984375" y="413.720977783203125"/>
+									<v x="710.86517333984375" y="381.31756591796875"/>
+									<v x="808.2286376953125" y="348.91412353515625"/>
+									<v x="899.28875732421875" y="375.0836181640625"/>
+									<v x="990.348876953125" y="401.253082275390625"/>
+									<v x="1081.408935546875" y="427.422576904296875"/>
+									<v x="1135.251220703125" y="408.3428955078125"/>
+									<v x="1189.093505859375" y="389.26318359375"/>
+									<v x="1242.935791015625" y="370.183502197265625"/>
+									<v x="1318.1649169921875" y="369.052001953125"/>
+									<v x="1393.3946533203125" y="367.9205322265625"/>
+									<v x="1468.623779296875" y="366.789031982421875"/>
+									<v x="1495.821533203125" y="364.215545654296875"/>
+									<v x="1523.0194091796875" y="361.6419677734375"/>
+									<v x="1550.2169189453125" y="359.06842041015625"/>
+									<v x="1673.4779052734375" y="359.378997802734375"/>
+									<v x="1796.739013671875" y="359.689483642578125"/>
+									<v x="1920" y="360"/>
+									<v x="111.19266510009765625" y="459.174285888671875"/>
+									<v x="186.559661865234375" y="458.792083740234375"/>
+									<v x="261.9266357421875" y="458.4097900390625"/>
+									<v x="337.293609619140625" y="458.02752685546875"/>
+									<v x="404.3717041015625" y="468.604827880859375"/>
+									<v x="471.449737548828125" y="479.182220458984375"/>
+									<v x="538.52789306640625" y="489.75946044921875"/>
+									<v x="633.29638671875" y="459.712005615234375"/>
+									<v x="728.0648193359375" y="429.664642333984375"/>
+									<v x="822.83331298828125" y="399.617218017578125"/>
+									<v x="897.78118896484375" y="426.914581298828125"/>
+									<v x="972.7291259765625" y="454.212005615234375"/>
+									<v x="1047.677001953125" y="481.509429931640625"/>
+									<v x="1112.3504638671875" y="472.153045654296875"/>
+									<v x="1177.0238037109375" y="462.796722412109375"/>
+									<v x="1241.697265625" y="453.44036865234375"/>
+									<v x="1317.064208984375" y="453.058074951171875"/>
+									<v x="1392.43115234375" y="452.675872802734375"/>
+									<v x="1467.798095703125" y="452.293609619140625"/>
+									<v x="1495.1334228515625" y="450.469268798828125"/>
+									<v x="1522.46875" y="448.64501953125"/>
+									<v x="1549.8040771484375" y="446.820709228515625"/>
+									<v x="1673.2027587890625" y="447.880523681640625"/>
+									<v x="1796.601318359375" y="448.94024658203125"/>
+									<v x="1920" y="450"/>
+									<v x="107.8899078369140625" y="531.192626953125"/>
+									<v x="183.394500732421875" y="531.55963134765625"/>
+									<v x="258.89910888671875" y="531.92657470703125"/>
+									<v x="334.4036865234375" y="532.2935791015625"/>
+									<v x="409.908294677734375" y="532.6605224609375"/>
+									<v x="485.412872314453125" y="533.02752685546875"/>
+									<v x="560.91748046875" y="533.39447021484375"/>
+									<v x="653.09100341796875" y="505.703094482421875"/>
+									<v x="745.2645263671875" y="478.01171875"/>
+									<v x="837.43804931640625" y="450.320343017578125"/>
+									<v x="896.273681640625" y="478.74566650390625"/>
+									<v x="955.10931396484375" y="507.170989990234375"/>
+									<v x="1013.9449462890625" y="535.5963134765625"/>
+									<v x="1089.4495849609375" y="535.96331787109375"/>
+									<v x="1164.9541015625" y="536.33026123046875"/>
+									<v x="1240.458740234375" y="536.697265625"/>
+									<v x="1315.9632568359375" y="537.06427001953125"/>
+									<v x="1391.4678955078125" y="537.43121337890625"/>
+									<v x="1466.972412109375" y="537.7982177734375"/>
+									<v x="1494.4453125" y="536.72314453125"/>
+									<v x="1521.9183349609375" y="535.6480712890625"/>
+									<v x="1549.3912353515625" y="534.572998046875"/>
+									<v x="1672.927490234375" y="536.38201904296875"/>
+									<v x="1796.4637451171875" y="538.19097900390625"/>
+									<v x="1920" y="540"/>
+									<v x="104.587158203125" y="603.21099853515625"/>
+									<v x="180.2293701171875" y="604.32720947265625"/>
+									<v x="255.8715972900390625" y="605.44342041015625"/>
+									<v x="331.513763427734375" y="606.55963134765625"/>
+									<v x="407.156005859375" y="607.67584228515625"/>
+									<v x="482.7982177734375" y="608.79205322265625"/>
+									<v x="558.4404296875" y="609.90826416015625"/>
+									<v x="655.74298095703125" y="605.700927734375"/>
+									<v x="753.0455322265625" y="601.49365234375"/>
+									<v x="850.3480224609375" y="597.28631591796875"/>
+									<v x="914.765625" y="597.45904541015625"/>
+									<v x="979.1832275390625" y="597.6318359375"/>
+									<v x="1043.600830078125" y="597.8045654296875"/>
+									<v x="1108.8074951171875" y="605.187744140625"/>
+									<v x="1174.0135498046875" y="612.57086181640625"/>
+									<v x="1239.22021484375" y="619.95416259765625"/>
+									<v x="1314.8621826171875" y="621.07037353515625"/>
+									<v x="1390.5047607421875" y="622.18658447265625"/>
+									<v x="1466.146728515625" y="623.30279541015625"/>
+									<v x="1493.75732421875" y="622.97698974609375"/>
+									<v x="1521.3680419921875" y="622.651123046875"/>
+									<v x="1548.9783935546875" y="622.3253173828125"/>
+									<v x="1672.6522216796875" y="624.883544921875"/>
+									<v x="1796.326171875" y="627.4417724609375"/>
+									<v x="1920" y="630"/>
+									<v x="101.28440093994140625" y="675.22930908203125"/>
+									<v x="177.064239501953125" y="677.09478759765625"/>
+									<v x="252.84405517578125" y="678.96014404296875"/>
+									<v x="328.623870849609375" y="680.82568359375"/>
+									<v x="404.4036865234375" y="682.69122314453125"/>
+									<v x="480.183502197265625" y="684.55657958984375"/>
+									<v x="555.96331787109375" y="686.4219970703125"/>
+									<v x="658.3948974609375" y="705.69866943359375"/>
+									<v x="760.82647705078125" y="724.97564697265625"/>
+									<v x="863.258056640625" y="744.2523193359375"/>
+									<v x="933.25762939453125" y="716.1724853515625"/>
+									<v x="1003.2572021484375" y="688.0926513671875"/>
+									<v x="1073.2567138671875" y="660.0128173828125"/>
+									<v x="1128.1650390625" y="674.4122314453125"/>
+									<v x="1183.0733642578125" y="688.8116455078125"/>
+									<v x="1237.981689453125" y="703.21099853515625"/>
+									<v x="1313.761474609375" y="705.07647705078125"/>
+									<v x="1389.541259765625" y="706.94183349609375"/>
+									<v x="1465.321044921875" y="708.807373046875"/>
+									<v x="1493.0692138671875" y="709.23089599609375"/>
+									<v x="1520.8173828125" y="709.65411376953125"/>
+									<v x="1548.5655517578125" y="710.07757568359375"/>
+									<v x="1672.3770751953125" y="713.38507080078125"/>
+									<v x="1796.1884765625" y="716.69244384765625"/>
+									<v x="1920" y="720"/>
+									<v x="97.98165130615234375" y="747.2476806640625"/>
+									<v x="173.899078369140625" y="749.86236572265625"/>
+									<v x="249.8165130615234375" y="752.47705078125"/>
+									<v x="325.73394775390625" y="755.09173583984375"/>
+									<v x="401.651397705078125" y="757.7064208984375"/>
+									<v x="477.568817138671875" y="760.32110595703125"/>
+									<v x="553.48626708984375" y="762.935791015625"/>
+									<v x="661.046875" y="805.69659423828125"/>
+									<v x="768.607421875" y="848.45745849609375"/>
+									<v x="876.16802978515625" y="891.21826171875"/>
+									<v x="951.74957275390625" y="834.8858642578125"/>
+									<v x="1027.3310546875" y="778.553466796875"/>
+									<v x="1102.91259765625" y="722.2210693359375"/>
+									<v x="1147.5228271484375" y="743.63665771484375"/>
+									<v x="1192.1329345703125" y="765.05230712890625"/>
+									<v x="1236.7431640625" y="786.4678955078125"/>
+									<v x="1312.6605224609375" y="789.08258056640625"/>
+									<v x="1388.5780029296875" y="791.697265625"/>
+									<v x="1464.495361328125" y="794.31195068359375"/>
+									<v x="1492.381103515625" y="795.484619140625"/>
+									<v x="1520.2669677734375" y="796.6572265625"/>
+									<v x="1548.1527099609375" y="797.82989501953125"/>
+									<v x="1672.101806640625" y="801.8865966796875"/>
+									<v x="1796.0509033203125" y="805.94329833984375"/>
+									<v x="1920" y="810"/>
+									<v x="94.67890167236328125" y="819.26605224609375"/>
+									<v x="170.73394775390625" y="822.62994384765625"/>
+									<v x="246.78900146484375" y="825.993896484375"/>
+									<v x="322.844024658203125" y="829.3577880859375"/>
+									<v x="398.89910888671875" y="832.7216796875"/>
+									<v x="474.95416259765625" y="836.08563232421875"/>
+									<v x="551.00921630859375" y="839.44952392578125"/>
+									<v x="648.15966796875" y="869.5775146484375"/>
+									<v x="745.3101806640625" y="899.70556640625"/>
+									<v x="842.46063232421875" y="929.83355712890625"/>
+									<v x="918.291748046875" y="893.8994140625"/>
+									<v x="994.12286376953125" y="857.96533203125"/>
+									<v x="1069.9539794921875" y="822.03118896484375"/>
+									<v x="1125.1375732421875" y="837.9290771484375"/>
+									<v x="1180.321044921875" y="853.826904296875"/>
+									<v x="1235.504638671875" y="869.72479248046875"/>
+									<v x="1311.5594482421875" y="873.08868408203125"/>
+									<v x="1387.6148681640625" y="876.45263671875"/>
+									<v x="1463.669677734375" y="879.8165283203125"/>
+									<v x="1507.70361328125" y="882.2191162109375"/>
+									<v x="1551.737548828125" y="884.62164306640625"/>
+									<v x="1595.771484375" y="887.02423095703125"/>
+									<v x="1703.84765625" y="891.3494873046875"/>
+									<v x="1811.923828125" y="895.67474365234375"/>
+									<v x="1920" y="900"/>
+									<v x="91.3761444091796875" y="891.28436279296875"/>
+									<v x="167.568817138671875" y="895.3974609375"/>
+									<v x="243.761474609375" y="899.51080322265625"/>
+									<v x="319.954132080078125" y="903.62384033203125"/>
+									<v x="396.14678955078125" y="907.73699951171875"/>
+									<v x="472.339447021484375" y="911.85015869140625"/>
+									<v x="548.5321044921875" y="915.96331787109375"/>
+									<v x="635.2724609375" y="933.45849609375"/>
+									<v x="722.01287841796875" y="950.9537353515625"/>
+									<v x="808.75323486328125" y="968.44891357421875"/>
+									<v x="884.83392333984375" y="952.91302490234375"/>
+									<v x="960.9146728515625" y="937.377197265625"/>
+									<v x="1036.995361328125" y="921.84124755859375"/>
+									<v x="1102.7520751953125" y="932.221435546875"/>
+									<v x="1168.5091552734375" y="942.6014404296875"/>
+									<v x="1234.26611328125" y="952.98162841796875"/>
+									<v x="1310.458740234375" y="957.0948486328125"/>
+									<v x="1386.6513671875" y="961.20794677734375"/>
+									<v x="1462.843994140625" y="965.32110595703125"/>
+									<v x="1523.026123046875" y="968.95367431640625"/>
+									<v x="1583.208251953125" y="972.5860595703125"/>
+									<v x="1643.390380859375" y="976.218505859375"/>
+									<v x="1735.5936279296875" y="980.81243896484375"/>
+									<v x="1827.7967529296875" y="985.40606689453125"/>
+									<v x="1920" y="990"/>
+									<v x="88.073394775390625" y="963.302734375"/>
+									<v x="164.4036712646484375" y="968.16510009765625"/>
+									<v x="240.7339324951171875" y="973.02752685546875"/>
+									<v x="317.064208984375" y="977.889892578125"/>
+									<v x="393.394500732421875" y="982.75225830078125"/>
+									<v x="469.724761962890625" y="987.61468505859375"/>
+									<v x="546.0550537109375" y="992.47705078125"/>
+									<v x="622.38531494140625" y="997.33941650390625"/>
+									<v x="698.715576171875" y="1002.20184326171875"/>
+									<v x="775.04583740234375" y="1007.064208984375"/>
+									<v x="851.3760986328125" y="1011.92657470703125"/>
+									<v x="927.7064208984375" y="1016.78900146484375"/>
+									<v x="1004.03668212890625" y="1021.6513671875"/>
+									<v x="1080.366943359375" y="1026.5137939453125"/>
+									<v x="1156.697265625" y="1031.3760986328125"/>
+									<v x="1233.027587890625" y="1036.238525390625"/>
+									<v x="1309.3577880859375" y="1041.1009521484375"/>
+									<v x="1385.6881103515625" y="1045.9632568359375"/>
+									<v x="1462.018310546875" y="1050.82568359375"/>
+									<v x="1538.3486328125" y="1055.6881103515625"/>
+									<v x="1614.6788330078125" y="1060.5504150390625"/>
+									<v x="1691.0091552734375" y="1065.412841796875"/>
+									<v x="1767.3394775390625" y="1070.2752685546875"/>
+									<v x="1843.669677734375" y="1075.1375732421875"/>
+									<v x="1920" y="1080"/>
+								</vertices>
+							</BezierWarper>
+							<Homography>
+								<src>
+									<v x="88.07342529296875" y="0"/>
+									<v x="1920" y="0"/>
+									<v x="1920" y="1080"/>
+									<v x="88.07342529296875" y="1080"/>
+								</src>
+								<dst>
+									<v x="88.07343292236328125" y="0"/>
+									<v x="1920.0001220703125" y="0"/>
+									<v x="1920.0001220703125" y="1080.0001220703125"/>
+									<v x="2.2018544673919677734" y="1077.79833984375"/>
+								</dst>
+							</Homography>
+						</Warper>
+					</Slice>
+				</layers>
+				<OutputDevice>
+					<OutputDeviceVirtual name="RIGHT" deviceId="VirtualRIGHT" idHash="15077339288730997157" width="1920" height="1080">
+						<Params name="Params">
+							<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.11713361411218946306"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="1" max="16384"/>
+								<ValueRange name="minMax" min="1" max="16384"/>
+								<ValueRange name="startStop" min="1" max="16384"/>
+							</ParamRange>
+							<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.065860953427333210342"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="1" max="16384"/>
+								<ValueRange name="minMax" min="1" max="16384"/>
+								<ValueRange name="startStop" min="1" max="16384"/>
+							</ParamRange>
+						</Params>
+					</OutputDeviceVirtual>
+				</OutputDevice>
+			</Screen>
+		</screens>
+		<SoftEdging>
+			<Params name="Soft Edge">
+				<ParamRange name="Gamma Red" T="DOUBLE" default="2" value="2">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="1" max="3"/>
+					<ValueRange name="minMax" min="1" max="3"/>
+					<ValueRange name="startStop" min="1" max="3"/>
+				</ParamRange>
+				<ParamRange name="Gamma Green" T="DOUBLE" default="2" value="2">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="1" max="3"/>
+					<ValueRange name="minMax" min="1" max="3"/>
+					<ValueRange name="startStop" min="1" max="3"/>
+				</ParamRange>
+				<ParamRange name="Gamma Blue" T="DOUBLE" default="2" value="2">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="1" max="3"/>
+					<ValueRange name="minMax" min="1" max="3"/>
+					<ValueRange name="startStop" min="1" max="3"/>
+				</ParamRange>
+				<ParamRange name="Gamma" T="DOUBLE" default="1" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="0" max="1"/>
+					<ValueRange name="minMax" min="0" max="1"/>
+					<ValueRange name="startStop" min="0" max="1"/>
+				</ParamRange>
+				<ParamRange name="Luminance" T="DOUBLE" default="0.5" value="0.5">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="0" max="1"/>
+					<ValueRange name="minMax" min="0" max="1"/>
+					<ValueRange name="startStop" min="0" max="1"/>
+				</ParamRange>
+				<ParamRange name="Power" T="DOUBLE" default="2" value="2">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.27536231884057965624"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="0.10000000000000000555" max="7"/>
+					<ValueRange name="minMax" min="0.10000000000000000555" max="7"/>
+					<ValueRange name="startStop" min="0.10000000000000000555" max="7"/>
+				</ParamRange>
+			</Params>
+		</SoftEdging>
+	</ScreenSetup>
+</XmlState>
+
